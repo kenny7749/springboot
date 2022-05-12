@@ -1,5 +1,4 @@
 FROM openjdk/openjdk-11-rhel7
-RUN apk add
 WORKDIR /java
 COPY . /java
 RUN mvn package -Dmaven.test.skip=true
